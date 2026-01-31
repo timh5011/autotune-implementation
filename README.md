@@ -3,16 +3,3 @@
 Implementation of autotune on audio input from scratch.
 
 ## Fourier
-
-$$
-\phi(x) = \frac{A_0}{2} + \sum_{n=1}^{\infty}\left( A_n \cos\left(\frac{n\pi x}{l}\right) + B_n \sin\left(\frac{n\pi x}{l}\right) \right)
-$$
-
-where
-$$
-A_n = \frac{1}{l}\int_{-l}^{l} \phi(x)\cos\left(\frac{n\pi x}{l}\right) \,dx \quad\text{for } n = 0,1,2,\dots
-$$
-and
-$$
-B_n = \frac{1}{l}\int_{-l}^{l} \phi(x)\sin\left(\frac{n\pi x}{l}\right) \,dx \quad\text{for } n = 1,2,\dots
-$$
