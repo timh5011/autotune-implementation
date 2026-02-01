@@ -31,6 +31,10 @@ and the Inverse Fourier Transform is defined.
 
 We sample points from $\phi(x)$. The Sampling Theorem tells us
 
+The Discrete Fourier Transform is
+
+$$ X_k = \sum _{n=0}^{N-1}x_n\exp\left( -\frac{i2\pi}{N}kn \right) = \braket{x}{k} $$
+
 ### Cooley-Tukey Algorithm for Fast Fourier Transform
 
 The computational cost of this approach is very expensive ~$O(n^2)$
