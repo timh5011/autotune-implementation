@@ -13,7 +13,7 @@ Implementation of autotune on audio input from scratch.
 2. ```python live_viz.py ```
 
 ## Theoretical Background
-### Fourier Series
+### Fourier Analysis
 
 Any (analytic?) (periodic?) function $\phi$ on interval $\[-l,l\]\in\mathbb{R}$ can be expressed as the series
 
@@ -21,7 +21,7 @@ $$\phi(x) = \sum _{n=-\infty}^{\infty} c_n\exp\left( \frac{in\pi x}{l} \right)$$
 
 where $$c_n = \frac{1}{2l} \int_{-l}^{l} \phi(x) \exp\left( -\frac{in\pi x}{l} \right) dx$$
 
-The Fourier Transform maps the function $\phi$ from the time domain to its dual (?) $\hat{\phi}$ frequency domain (the dual space).
+The Fourier Transform maps any function $\phi$ from the time domain to its dual (?) $\hat{\phi}$ frequency domain (the dual space).
 
 The Fourier Transform is defined as $$\hat{\phi}(k) = \int_{-\infty}^{\infty} \phi(x) \exp(-ikx) dx$$
 
