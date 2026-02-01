@@ -31,4 +31,4 @@ $$X_k = \sum _{n=0}^{N-1}x_n\exp\left( -\frac{i2\pi}{N}kn \right) = \langle x|k\
 
 ### Cooley-Tukey Algorithm for Fast Fourier Transform
 
-The computational cost of this approach is very expensive ~O$(n^2)$
+The computational cost of this approach is very expensive $\n^2$
