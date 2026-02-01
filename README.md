@@ -15,17 +15,14 @@ Implementation of autotune on audio input from scratch.
 ## Theoretical Background
 ### Fourier Analysis in Signal Processing
 
-Any (analytic?) (periodic?) function $\phi$ on interval $\[-l,l\]\in\mathbb{R}$ can be expressed as the series
+The Fourier Transform maps a function $\phi$ from the time domain to its dual (?) $\hat{\phi}$ frequency domain (the dual space).
 
-$$\phi(x) = \sum _{n=-\infty}^{\infty} c_n\exp\left( \frac{in\pi x}{l} \right)$$
+The Fourier Transform is defined as 
+$$
+\hat{\phi}(k) = \int_{-\infty}^{\infty} \phi(x) \exp(-ikx) dx
+$$
 
-where $$c_n = \frac{1}{2l} \int_{-l}^{l} \phi(x) \exp\left( -\frac{in\pi x}{l} \right) dx$$
-
-The Fourier Transform maps any function $\phi$ from the time domain to its dual (?) $\hat{\phi}$ frequency domain (the dual space).
-
-The Fourier Transform is defined as $$\hat{\phi}(k) = \int_{-\infty}^{\infty} \phi(x) \exp(-ikx) dx$$
-
-and the Inverse Fourier Transform is defined.
+and the Inverse Fourier Transform is defined 
 
 ### The Numerical Approach: Discrete Fourier Transform
 
