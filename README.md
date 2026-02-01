@@ -19,7 +19,7 @@ The Fourier Transform maps a function $\phi$ from the time domain to its dual (?
 
 The Fourier Transform is defined as 
 $$
-\hat{\phi}(k) = \int_{-\infty}^{\infty} \phi(x) \exp(-ikx) dx
+\hat{\phi}(k) = \int_{-\infty}^{\infty} \phi(x) \exp(-ikx) \, dx
 $$
 
 and the Inverse Fourier Transform is defined 
