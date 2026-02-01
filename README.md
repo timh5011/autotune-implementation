@@ -17,7 +17,7 @@ Implementation of autotune on audio input from scratch.
 
 The Fourier Transform maps a function $\phi$ from the time domain to its dual (?) $\hat{\phi}$ frequency domain (the dual space).
 
-The Fourier Transform is defined as $$\hat{\phi}(k) = \int_{-\infty}^{\infty} \phi(x) \exp(-ikx) \, dx$$
+The Fourier Transform is defined as $$\hat{\phi}(k) = \int_{-\infty}^{\infty} \phi(x) \exp(-ikx) \ dx$$
 
 and the Inverse Fourier Transform is defined 
 
