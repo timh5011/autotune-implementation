@@ -10,6 +10,8 @@ Implementation of autotune on audio input from scratch.
 
 1. ```pip install sounddevice numpy matplotlib scipy```
 
+2. ```python live_viz.py ```
+
 ## Theoretical Background
 ### Fourier Series
 
