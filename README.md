@@ -17,9 +17,9 @@ Implementation of autotune on audio input from scratch.
 
 Any (analytic?) (periodic?) function $\phi$ on interval $\[-l,l\]\in\mathbb{R}$ can be expressed as the series
 
-$$ \phi(x) = \sum _{n=-\infty}^{\infty} c_n\exp\left( \frac{in\pi x}{l} \right) $$
+\\[ \phi(x) = \sum _{n=-\infty}^{\infty} c_n\exp\left( \frac{in\pi x}{l} \right) \\]
 
-where $$ \frac{1}{2l}\int _{-l}^{l} dx \text{ }\phi(x)\exp\left( \frac{-in\pi x}{l} \right). $$
+where \\[ c_n = \frac{1}{2l}\int _{-l}^{l} dx \text{ }\phi(x)\exp\left( \frac{-in\pi x}{l} \right). \\]
 
 The Fourier Transform maps the function $\phi$ from the time domain to its dual (?) $\hat{\phi}$ frequency domain (the dual space).
 
