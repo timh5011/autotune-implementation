@@ -19,11 +19,11 @@ Any (analytic?) (periodic?) function $\phi$ on interval $\[-l,l\]\in\mathbb{R}$ 
 
 $$ \phi(x) = \sum _{n=-\infty}^{\infty} c_n\exp\left( \frac{in\pi x}{l} \right) $$
 
-where $ c_n = \frac{1}{2l}\int _{-l}^{l} dx \text{ }\phi(x)\exp\left( \frac{-in\pi x}{l} \right). $
+where $$ c_n = \frac{1}{2l}\int _{-l}^{l} dx \text{ }\phi(x)\exp\left( \frac{-in\pi x}{l} \right). $$
 
 The Fourier Transform maps the function $\phi$ from the time domain to its dual (?) $\hat{\phi}$ frequency domain (the dual space).
 
-The Fourier Transform is defined as $$ \hat{\phi}(k) = \int _{-\infty}^{\infty} dx\text{ }\phi(x)exp\left( \frac{-in\pi x}{l} \right). $$
+The Fourier Transform is defined as $ \hat{\phi}(k) = \int _{-\infty}^{\infty} dx\text{ }\phi(x)exp\left( \frac{-in\pi x}{l} \right). $
 
 and the Inverse Fourier Transform is defined.
 
