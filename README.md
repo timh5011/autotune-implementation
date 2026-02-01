@@ -33,7 +33,7 @@ We sample points from $\phi(x)$. The Sampling Theorem tells us
 
 The Discrete Fourier Transform is
 
-$$ X_k = \sum _{n=0}^{N-1}x_n\exp\left( -\frac{i2\pi}{N}kn \right) = \braket{x}{k} $$
+$$ X_k = \sum _{n=0}^{N-1}x_n\exp\left( -\frac{i2\pi}{N}kn \right) = \bra{x}\ket{k} $$
 
 ### Cooley-Tukey Algorithm for Fast Fourier Transform
 
