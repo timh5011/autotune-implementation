@@ -14,7 +14,7 @@ where $c_n = \frac{1}{2l}\int _{-l}^{l} dx \text{ }\phi(x)\exp\left( \frac{-in\p
 
 The Fourier Transform maps the function $\phi$ from the time domain to its dual (?) $\hat{\phi}$ frequency domain (the dual space).
 
-The Fourier Transform is defined as $ \hat{f} = \hat{\phi}}(k) = \int _{-\infty}^{\infty} dx\text{ }\phi(x)exp\left( \frac{-in\pi x}{l} \right). $
+The Fourier Transform is defined as $\hat{\phi}(k) = \int _{-\infty}^{\infty} dx\text{ }\phi(x)exp\left( \frac{-in\pi x}{l} \right). $
 
 and the Inverse Fourier Transform is defined.
 
