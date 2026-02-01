@@ -27,7 +27,7 @@ And the Inverse Fourier Transform is defined similarly, reversing the mapping ba
 
 ### The Numerical Approach: Discrete Fourier Transform
 
-We sample discrete points from the continuous signal $\phi(x)$. According to the Nyquist-Shannon Sampling Theorem, we can perfectly reconstruct the signal if we sample at least twice the highest frequency present.
+We sample discrete points from the continuous signal $\phi(x)$. According to the Nyquist-Shannon Sampling Theorem
 
 The Discrete Fourier Transform (DFT) is:
 
@@ -39,4 +39,4 @@ Here, $\langle x | k \rangle$ represents the inner product of our audio samples 
 
 ### Cooley-Tukey Algorithm for Fast Fourier Transform
 
-The computational cost of the naive DFT approach is very expensive, specifically $O(n^2)$. To process audio in real-time, we use the Cooley-Tukey FFT algorithm, which reduces the complexity to $O(n \log n)$ by recursively breaking the problem into even and odd components.
+The computational cost of the naive DFT approach is very expensive
