@@ -23,7 +23,7 @@ where $$ c_n = \frac{1}{2l}\int _{-l}^{l} dx \text{ }\phi(x)\exp\left( \frac{-in
 
 The Fourier Transform maps the function $\phi$ from the time domain to its dual (?) $\hat{\phi}$ frequency domain (the dual space).
 
-The Fourier Transform is defined as $ \hat{\phi}(k) = \int _{-\infty}^{\infty} dx\text{ }\phi(x)exp\left( \frac{-in\pi x}{l} \right). $
+The Fourier Transform is defined as $ \hat{\phi}(k) = \int _{-\infty}^{\infty} dx\text{ }\phi(x)\exp\left( \frac{-in\pi x}{l} \right). $
 
 and the Inverse Fourier Transform is defined.
 
@@ -33,7 +33,7 @@ We sample points from $\phi(x)$. The Sampling Theorem tells us
 
 The Discrete Fourier Transform is
 
-$$ X_k = \sum _{n=0}^{N-1}x_n\exp\left( -\frac{i2\pi}{N}kn \right) = \bra{x}\ket{k} = \langle \text{sample}|\text{frequency k}\rangle $$
+$$ X_k = \sum _{n=0}^{N-1}x_n\exp\left( -\frac{i2\pi}{N}kn \right) = \langle x|k\rangle  = \langle \text{sample}|\text{frequency k}\rangle $$
 
 ### Cooley-Tukey Algorithm for Fast Fourier Transform
 
