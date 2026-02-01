@@ -15,12 +15,12 @@ Implementation of autotune on audio input from scratch.
 
 ### Fourier Analysis in Signal Processing
 
-The Fourier Transform maps a function $\phi$ from the time domain to its dual frequency domain $\hat{\phi}$ (the dual space).
+The Fourier Transform maps a function $\phi$ from the time domain to its dual (?) frequency domain $\hat{\phi}$ (the dual space).
 
 The Fourier Transform is defined as:
 
 $$
-\hat{\phi}(k) = \int_{-\infty}^{\infty} \phi(x) \exp(-ikx) \, dx
+\hat{\phi}(k) = \int_{-\infty}^{\infty} \phi(x) \exp(-ikx) \ dx
 $$
 
 And the Inverse Fourier Transform is defined similarly, reversing the mapping back to the time domain.
