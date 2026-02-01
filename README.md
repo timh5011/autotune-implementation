@@ -13,7 +13,7 @@ Implementation of autotune on audio input from scratch.
 2. ```python live_viz.py ```
 
 ## Theoretical Background
-### Fourier Analysis
+### Fourier Analysis in Signal Processing
 
 Any (analytic?) (periodic?) function $\phi$ on interval $\[-l,l\]\in\mathbb{R}$ can be expressed as the series
 
