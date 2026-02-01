@@ -8,6 +8,8 @@ Implementation of autotune on audio input from scratch.
 
 ## User Instructions
 
+1. ```pip install sounddevice numpy matplotlib scipy```
+
 ## Theoretical Background
 ### Fourier Series
 
