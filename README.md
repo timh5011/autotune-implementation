@@ -3,9 +3,21 @@
 Implementation of autotune on audio input from scratch.
 
 
-## Background Theory
-### Fourier Series
+# Theoretical Background of Cooley-Tukey Algorithm for Fast Fourier Transform.
+## Fourier Series
+
+Any (analytic?) (periodic?) function $\phi$ on interval $\[-l,l\]\in\mathbb{R}$ can be expressed as the series
 
 $\phi(x) = \sum _{n=-\infty}^{\infty} c_n\exp\left( \frac{in\pi x}{l} \right)$
 
 where $c_n = \frac{1}{2l}\int _{-l}^{l} dx \text{ }\phi(x)\exp\left( \frac{-in\pi x}{l} \right). $ 
+
+The Fourier Transform maps the function $\phi$ from the time domain to its dual (?) $\hat{f}$ frequency domain (the dual space).
+
+The Fourier Transform is defined as $ FT\[f\] = \hat{f} =  $
+
+and the Inverse Fourier Transform is defined.
+
+### The Numerical Appraoch: Discrete Fourier Transform
+
+We sample points from $\phi(x)$. The Sampling Theorem tells us
