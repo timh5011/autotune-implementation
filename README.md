@@ -15,7 +15,7 @@ Implementation of autotune on audio input from scratch.
 
 ### Fourier Analysis in Signal Processing
 
-We are given some audio signal $\ket{x} = \phi(x)$ and wish to decompose it into the different frequencies making it up. We can do this by representing this signal vector in the orthonormal basis of freqencies $\ket{k} = \exp(ikx)$, for integers $k$. We get 
+We are given some audio signal $\ket{x} = \phi$ and wish to decompose it into the different frequencies making it up. We can do this by representing this signal vector in the orthonormal basis of freqencies $\ket{k} = \exp(ikx)$, for integers $k$. We get 
 
 $$
 \ket{x} = \int_{-\infty}^{\infty}\hat{\phi}(k)\ket{k} \ dx
@@ -35,19 +35,19 @@ And the Inverse Fourier Transform is defined similarly, reversing the mapping ba
 
 ### The Numerical Approach: Discrete Fourier Transform
 
-We sample discrete points from the continuous signal $\phi(x)$. According to the Nyquist-Shannon Sampling Theorem
+We sample discrete points from the continuous signal $\phi(x)$. According to the Nyquist-Shannon Sampling Theorem ...
 
-The Discrete Fourier Transform (DFT) is:
+The Discrete Fourier Transform is:
 
 $$
 X_k = \sum_{n=0}^{N-1} x_n \exp\left( -\frac{i 2\pi}{N} kn \right)
 $$
 
-The job of performing a Fourier Transform comes down to computing the coefficient $X_k$ for all frequencies $k$. If there are $N$ and (?) $N$ samples, each of these computations requires $N^2$ multiplications, and thus the runtime of this procedure is $O(N^2)$. 
+The job of performing a Fourier Transform comes down to computing the coefficient $X_k$ for all frequencies $k$. If there are $N$ and (?) $N$ samples, each frequency computation requires $N$ multiplications, and thus the runtime of this procedure is $O(N^2)$. 
 
 ### Cooley-Tukey Algorithm for Fast Fourier Transform
 
-The computational cost of the naive DFT approach is very expensive. Fast-Fourier-Transform exploits the fact that the twiddle factors $W_N^n = \exp\left( -\frac{i 2\pi}{N} kn \right)$ are periodic. Notice $W_N^{n+N/2} = - W_N^n$. 
+The computational cost of the naive DFT approach is very expensive. Fast-Fourier-Transform exploits the fact that the twiddle factors $W_N^n = \exp\left( -\frac{i 2\pi}{N} kn \right)$ are periodic to perform the same transformation in $O(N\log{N})$ time. Notice $W_N^{n+N/2} = - W_N^n$. 
 
 
 $$
