@@ -1,6 +1,6 @@
 # autotune-implementation
 
-Implementation of autotune on audio input from scratch.
+Implementation of autotune on live audio input from scratch.
 
 ## Contents
  * [User Instructions](#user-instructions)
