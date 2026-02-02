@@ -49,6 +49,8 @@ The computational cost of the naive DFT approach is very expensive
 
 
 $$
-X_k = \sum_{n=0}^{N-1} x_n \exp\left( -\frac{i 2\pi}{N} kn \right) \\
-= \sum_{n\text{ even}} x_n \exp\left( -\frac{i 2\pi}{N} kn \right) + \sum_{n\text{ odd}} x_n \exp\left( -\frac{i 2\pi}{N} kn \right) 
+\begin{aligned}
+X_k &= \sum_{n=0}^{N-1} x_n \exp\left( -\frac{i 2\pi}{N} kn \right) \\
+&= \sum_{n \in \text{even}} x_n \exp\left( -\frac{i 2\pi}{N} kn \right) + \sum_{n \in \text{odd}} x_n \exp\left( -\frac{i 2\pi}{N} kn \right)
+\end{aligned}
 $$
