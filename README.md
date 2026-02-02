@@ -15,10 +15,10 @@ Implementation of autotune on audio input from scratch.
 
 ### Fourier Analysis in Signal Processing
 
-We are given some audio signal $\bra{x} = \phi(x)$ and wish to decompose it into the different frequencies making it up. We can do this by representing this signal vector in the basis $\{\bra{k} = \exp(ikx) : k\in\mathbb{Z}\}$, the basis of freqencies. We get 
+We are given some audio signal $\ket{x} = \phi(x)$ and wish to decompose it into the different frequencies making it up. We can do this by representing this signal vector in the basis $\{\bra{k} = \exp(ikx) : k\in\mathbb{Z}\}$, the basis of freqencies. We get 
 
 $$
-\bra{x} = \int_{-\infty}^{\infty}hat{\phi}(k)\hat{\phi}(k)\bra{k} \ dx
+\ket{x} = \int_{-\infty}^{\infty}\hat{\phi}(k)\hat{\phi}(k)\ket{k} \ dx
 $$
 
 The Fourier Transform allows us to solve for the coefficients by mapping the function $\phi$ from the time domain to the frequency domain $\hat{\phi}$.
