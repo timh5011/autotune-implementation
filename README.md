@@ -43,9 +43,11 @@ $$
 X_k = \sum_{n=0}^{N-1} x_n \exp\left( -\frac{i 2\pi}{N} kn \right)
 $$
 
+The job of performing a Fourier Transform comes down to computing the coefficient $X_k$ for all frequencies $k$. If there are $N$ and (?) $N$ samples, each of these computations requires $N^2$ multiplications, and thus the runtime of this procedure is $O(N^2)$. 
+
 ### Cooley-Tukey Algorithm for Fast Fourier Transform
 
-The computational cost of the naive DFT approach is very expensive
+The computational cost of the naive DFT approach is very expensive. Fast-Fourier-Transform exploits the fact that the twiddle factors $W_N^n = \exp\left( -\frac{i 2\pi}{N} kn \right)$ are periodic. Notice $W_N^{n+N/2} = - W_N^n$. 
 
 
 $$
