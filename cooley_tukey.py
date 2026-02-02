@@ -7,3 +7,4 @@ import numpy as np
 # The point of this is is that these samples will be dotted with essentially the same basis vectors (sign chance)?
 # The reason for this is due to the periodicity of the complex exponentials (basis vectors)
 # I'm not totally sure how separating the samples by even and odd indicies corresponds to this periodicity
+
