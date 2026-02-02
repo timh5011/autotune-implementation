@@ -52,14 +52,6 @@ $$
 \begin{aligned}
 X_k &= \sum_{n=0}^{N-1} x_n \exp\left( -\frac{i 2\pi}{N} kn \right) \\
 &= \sum_{n \text{even}} x_n \exp\left( -\frac{i 2\pi}{N} kn \right) + \sum_{n \text{odd}} x_n \exp\left( -\frac{i 2\pi}{N} kn \right) \\
-&= \sum_{m=0}^{N/2-1} x_{2m} \exp\left( -\frac{i 2\pi}{N/2} km \right) + e^{-\frac{i 2\pi}{N} k} \sum_{m=0}^{N/2-1} x_{2m+1} \exp\left( -\frac{i 2\pi}{N/2} km \right)
-\end{aligned}
-$$
-or 
-$$
-\begin{aligned}
-X_k &= \sum_{n=0}^{N-1} x_n \exp\left( -\frac{i 2\pi}{N} kn \right) \\
-&= \sum_{m=0}^{N/2-1} x_{2m} \exp\left( -\frac{i 2\pi}{N} k(2m) \right) + \sum_{m=0}^{N/2-1} x_{2m+1} \exp\left( -\frac{i 2\pi}{N} k(2m+1) \right) \\
-&= \sum_{m=0}^{N/2-1} x_{2m} \exp\left( -\frac{i 2\pi}{N/2} km \right) + e^{-\frac{i 2\pi}{N} k} \sum_{m=0}^{N/2-1} x_{2m+1} \exp\left( -\frac{i 2\pi}{N/2} km \right)
+&= \sum_{m=0}^{N/2-1} x_{2m} \exp\left( -\frac{i 2\pi}{N/2} km \right) + \exp\left(-\frac{i 2\pi}{N} k\right) \sum_{m=0}^{N/2-1} x_{2m+1} \exp\left( -\frac{i 2\pi}{N/2} km \right)
 \end{aligned}
 $$
