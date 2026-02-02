@@ -20,8 +20,10 @@ The Fourier Transform maps a function $\phi$ from the time domain to its dual (?
 The Fourier Transform is defined as:
 
 $$
-\hat{\phi}(k) = \int_{-\infty}^{\infty} \phi(x) \exp(-ikx) \ dx
+\hat{\phi}(k) = \int_{-\infty}^{\infty} \phi(x) \exp(-ikx) \ dx = \langle x | k \rangle
 $$
+
+Here, $\langle x | k \rangle$ represents the inner product of our audio samples with the $k$-th frequency mode.
 
 And the Inverse Fourier Transform is defined similarly, reversing the mapping back to the time domain.
 
@@ -32,10 +34,8 @@ We sample discrete points from the continuous signal $\phi(x)$. According to the
 The Discrete Fourier Transform (DFT) is:
 
 $$
-X_k = \sum_{n=0}^{N-1} x_n \exp\left( -\frac{i 2\pi}{N} kn \right) = \langle x | k \rangle
+X_k = \sum_{n=0}^{N-1} x_n \exp\left( -\frac{i 2\pi}{N} kn \right)
 $$
-
-Here, $\langle x | k \rangle$ represents the inner product of our audio samples with the $k$-th frequency mode.
 
 ### Cooley-Tukey Algorithm for Fast Fourier Transform
 
