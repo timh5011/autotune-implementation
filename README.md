@@ -53,7 +53,7 @@ The computational cost of the naive DFT approach is very expensive. Fast-Fourier
 $$
 \begin{aligned}
 X_k &= \sum_{n=0}^{N-1} x_n \exp\left( -\frac{i 2\pi}{N} kn \right) \\
-&= \sum_{n \text{even}} x_n \exp\left( -\frac{i 2\pi}{N} kn \right) + \sum_{n \text{odd}} x_n \exp\left( -\frac{i 2\pi}{N} kn \right) \\
+&= \sum_{n \text{ even}} x_n \exp\left( -\frac{i 2\pi}{N} kn \right) + \sum_{n \text{ odd}} x_n \exp\left( -\frac{i 2\pi}{N} kn \right) \\
 &= \sum_{m=0}^{N/2-1} x_{2m} \exp\left( -\frac{i 2\pi}{N/2} km \right) + \exp\left(-\frac{i 2\pi}{N} k\right) \sum_{m=0}^{N/2-1} x_{2m+1} \exp\left( -\frac{i 2\pi}{N/2} km \right)
 \end{aligned}
 $$
